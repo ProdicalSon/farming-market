@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #d3dfd7;
+    padding-left: 50px;
+    padding-right: 50px
+}
+nav{
+    padding: 20px;
+    display: flex;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+nav b{
+    font-style: oblique;
+    font-size: 25px;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+nav ul li{
+    margin-right: 100px;
+}
+nav ul a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+.veggies{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.veggie-div{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    
+}
+#veggie1{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/kales-exp.png); 
+}
+#veggie2{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/tomatoes.jpg); 
+}
+.wrapper{
+    display: flex;
+}
+.advert{
+    margin-top: 30px;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    font-size: 50px;
+    text-align: center;
+    flex-direction: column;
+}
+.advert p{
+    font-family: 'Kaushan Script', cursive;
+    margin-top: -100px;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    font-size: 26px;
+    margin-top: 10px;
+    color: gold;
+    margin-bottom: 10px;
+}
+button{
+    width: 180px;
+    height: 60px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/veggies.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 27px;
+    color: white;
+    font-weight: bold;
+}
+button p{
+    font-size: 20px;
+    color: white;
+}
+
