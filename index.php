@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FarmFresh Market</title>
+    <title>FarmFresh || Home</title>
 </head>
 <body>
     <nav>
@@ -19,6 +19,7 @@
            <a href=""><li>Orders</li></a> 
            <a href=""><li>About</li></a> 
            <a href=""><li>Contact</li></a> 
+           <a href=""><li><i class="fa-sharp fa-solid fa-right-to-bracket"></i></li></a>
         </ul>
     </nav>
 
@@ -46,7 +47,7 @@
         </div>
         <div class="buttons">
         <a href="#"><button>Shop Now !</button></a>
-         <a href="#"><button>Sell Now !</button></a>
+        <a href="sell.php" target="_blank"><button>Sell Now !</button></a>
         </div>
     </div>
     </div>

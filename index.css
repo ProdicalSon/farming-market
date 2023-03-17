@@ -52,12 +52,30 @@ nav ul a{
     font-family: 'Kaushan Script', cursive;
     font-size: 35px;
     flex-direction: column;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-out;
+}
+.veggie-div:hover{
+    transform: perspective(500px) rotateX(0deg) translateZ(70px);
+}
+.veggie-div:hover p{
+    opacity: 0;
+}
+
+.veggie-div p{
+    transition: ease-in-out 1s;
 }
 #veggie1{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/kales-exp.png); 
 }
+#veggie1:hover{
+    background-image: url(images/kales-exp.png);
+}
 #veggie2{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/tomatoes.jpg); 
+}
+#veggie2:hover{
+    background-image: url(images/tomatoes.jpg);
 }
 .wrapper{
     display: flex;
@@ -74,6 +92,7 @@ nav ul a{
     text-align: center;
     flex-direction: column;
 }
+
 .advert p{
     font-family: 'Kaushan Script', cursive;
     margin-top: -100px;
@@ -103,4 +122,5 @@ button p{
     font-size: 20px;
     color: white;
 }
+
 
