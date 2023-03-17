@@ -26,8 +26,14 @@
     <div class="veggies">
     <div id="veggie1" class="veggie-div">
         <p>Fresh Kales</p>
+        <p>Price: Ksh100</p>
+        <p>Location: Nairobi</p>
     </div>
-    <div id="veggie2" class="veggie-div"></div>    
+    <div id="veggie2" class="veggie-div">
+        <p>Fresh Red Pepper</p>
+        <p>Price: Ksh100</p>
+        <p>Location: Kiambu</p>
+    </div>    
     </div>
     <div class="advert">
         <p>Sell your bountiful harvest or purchase high-quality farm products from our top rated website !</p>
@@ -39,8 +45,8 @@
         <i class="fa-solid fa-star"></i>
         </div>
         <div class="buttons">
-        <button>Shop Now !</button>
-        <button>Sell Now !</button>
+        <a href="#"><button>Shop Now !</button></a>
+         <a href="#"><button>Sell Now !</button></a>
         </div>
     </div>
     </div>
