@@ -14,8 +14,8 @@ $locationn = $_POST['locationn'];
 $photo = $_FILES['photo'];
 
 if (is_uploaded_file($photo['tmp_name'])) {
-    $filename = uniqid().'.'.pathinfo($photo['name'], PATHINF0_EXTENSION);
-    $destination = 'uploads/'.$filename;
+    $filename = uniqid().'.'.pathinfo($photo['name'], PATHINFO_EXTENSION);
+    $destination = 'uploads/' .$filename;
     move_uploaded_file($photo['tmp_name'], $destination);
 
 // Prepare SQL statement
@@ -27,7 +27,7 @@ mysqli_stmt_bind_param($stmt, "ssss", $product, $price, $locationn,$filename);
 mysqli_stmt_execute($stmt);
 
 
-
+echo "uploaded seccessifully";
 // Close prepared statement and database connection
 mysqli_stmt_close($stmt);
 mysqli_close($connection);
