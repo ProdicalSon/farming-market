@@ -7,6 +7,7 @@
 }
 #search-form{
     margin-left: 36%;
+    border-radius: 3px;
 }
 #search-form input:focus{
     outline: none;
@@ -19,6 +20,7 @@ button{
     width: 60px;
     height: 20px;
     font-size: 15px;
+    padding: 5px;
 }
 .products-wrapper{
     display: flex;
