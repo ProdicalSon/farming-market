@@ -17,7 +17,7 @@
 <nav>
     <b>FarmFresh Market</b>
     <ul>
-    <a href=""><li>Shop</li></a> 
+    <a href="products.php" target="_blank"><li>Shop</li></a> 
     <a href=""><li>Orders</li></a> 
     <a href=""><li>About</li></a> 
     <a href=""><li>Contact</li></a> 

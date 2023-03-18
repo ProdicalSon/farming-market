@@ -1,0 +1,31 @@
+#header{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 30px;
+}
+#search-form{
+    margin-left: 36%;
+}
+#search-form input:focus{
+    outline: none;
+}
+#search-form input{
+    line-height: 1.5;
+    text-align: center;
+}
+button{
+    width: 60px;
+    height: 20px;
+    font-size: 15px;
+}
+.products-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product{
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+}
