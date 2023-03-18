@@ -27,19 +27,19 @@
 
 <div class="form-wrapper">
     <div class="seller-details">
-        <form action="" method="POST">
+        <form action="sellprocess.php" method="POST" enctype="multipart/form-data">
             <label>Product Name</label>
-            <input type="text" name="product" placeholder="enter the name of the product">
+            <input type="text" name="product" placeholder="enter the name of the product" required>
 
             <label>Price</label>
-            <input type="text" name="price" placeholder="enter the price of the product in Ksh">
+            <input type="text" name="price" placeholder="enter the price of the product in Ksh" required>
 
             <label>Location</label>
-            <input type="text" name="location" placeholder="enter the product location">
+            <input type="text" name="locationn" placeholder="enter the product location" required>
 
             <label>Product Photo</label>
             <input type="file" name="photo">
-            <button name=submit>Submit</button>
+            <button name="submit">Submit</button>
         </form>
     </div>
     <div class="selling-advert">
@@ -51,21 +51,3 @@
 </body>
 </html>
 
-<?php 
-    if (isset($_POST["submit"])) {
-        if (!$connection) {
-            die("connection failed: " .mysql_connect_error());
-        }else{
-            //get form data
-            $product = $_POST["product"];
-            $price = $_POST["price"];
-            $location = $_POST["location"];
-            $photo = $_POST["photo"];
-
-            //check if file is uploaded
-            if (is_uploaded_file($photo['tmp_name'])) {
-                $photoname = uniqid() . '.' . pathinfo($photo['name'], PATHINFO_EXTENSION);
-            }
-        }
-    }
-?>
