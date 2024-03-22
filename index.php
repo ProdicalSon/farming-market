@@ -9,14 +9,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FarmFresh || Home</title>
+    <title>ALGORITHM-X ENTERPRICES || Home</title>
 </head>
 <body>
     <nav>
-        <b>FarmFresh Market</b>
+        <b>Shoe Market</b>
         <ul>
            <a href="products.php" target="_blank"><li>Shop</li></a> 
            <a href=""><li>Orders</li></a> 
+           <a href=""><li>New Arrivals</li></a> 
            <a href=""><li>About</li></a> 
            <a href=""><li>Contact</li></a> 
            <a href=""><li><i class="fa-sharp fa-solid fa-right-to-bracket"></i></li></a>
