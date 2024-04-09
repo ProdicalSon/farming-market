@@ -66,16 +66,16 @@ nav ul a{
     transition: ease-in-out 1s;
 }
 #veggie1{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/nikeairjordan4.jfif); 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/1.jpg); 
 }
 #veggie1:hover{
-    background-image: url(images/nikeairjordan4.jfif);
+    background-image: url(images/1.jpg);
 }
 #veggie2{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/nikeairjordan4.jfif); 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/1.jpg); 
 }
 #veggie2:hover{
-    background-image: url(images/nikeairjordan4.jfif);
+    background-image: url(images/1.jpg);
 }
 .wrapper{
     display: flex;
