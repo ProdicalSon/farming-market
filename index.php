@@ -27,8 +27,8 @@
     <div class="wrapper">
     <div class="veggies">
     <div id="veggie1" class="veggie-div">
-        <p>Fresh Kales</p>
-        <p>Price: Ksh100</p>
+        <p>Nike Air Jordan 4</p>
+        <p>Price: Ksh2500</p>
         <p>Location: Nairobi</p>
     </div>
     <div id="veggie2" class="veggie-div">

@@ -8,9 +8,10 @@ if (!$connection) {
 die("Connection failed: " . mysqli_connect_error());
 }else{
 // Retrieve form data
-$product = $_POST['product'];
+$productname = $_POST['productname'];
 $price = $_POST['price'];
 $locationn = $_POST['locationn'];
+$quantity = $_POST['quantity'];
 $photo = $_FILES['photo'];
 
 if (is_uploaded_file($photo['tmp_name'])) {
@@ -19,9 +20,9 @@ if (is_uploaded_file($photo['tmp_name'])) {
     move_uploaded_file($photo['tmp_name'], $destination);
 
 // Prepare SQL statement
-$sql = "INSERT INTO market_table(product, price, locationn,photo) VALUES (?,?,?,?)";
+$sql = "INSERT INTO market_table(productname, price, locationn, quantity, photo) VALUES (?,?,?,?,?)";
 $stmt = mysqli_prepare($connection, $sql);
-mysqli_stmt_bind_param($stmt, "ssss", $product, $price, $locationn,$filename);
+mysqli_stmt_bind_param($stmt, "sssss", $productname, $price, $locationn,$quantity,$filename);
 
 // Execute prepared statement
 mysqli_stmt_execute($stmt);

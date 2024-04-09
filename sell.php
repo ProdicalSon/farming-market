@@ -11,11 +11,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FarmFresh || Sell</title>
+    <title>Shoe Market || Sell</title>
 </head>
 <body>
 <nav>
-    <b>FarmFresh Market</b>
+    <b>Shoe Market</b>
     <ul>
     <a href="products.php" target="_blank"><li>Shop</li></a> 
     <a href=""><li>Orders</li></a> 
@@ -29,13 +29,16 @@
     <div class="seller-details">
         <form action="sellprocess.php" method="POST" enctype="multipart/form-data">
             <label>Product Name</label>
-            <input type="text" name="product" placeholder="enter the name of the product" required>
+            <input type="text" name="productname" placeholder="enter the name of the product" required>
 
             <label>Price</label>
             <input type="text" name="price" placeholder="enter the price of the product in Ksh" required>
 
             <label>Location</label>
             <input type="text" name="locationn" placeholder="enter the product location" required>
+
+            <label>Quantity</label>
+            <input type="text" name="quantity" placeholder="enter how many you need" required>
 
             <label>Product Photo</label>
             <input type="file" name="photo">

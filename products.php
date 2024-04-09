@@ -1,7 +1,7 @@
 <?php 
 include "connection.php";
 
-$query = "SELECT product,price,locationn,photo FROM market_table";
+$query = "SELECT productname,price,locationn,quantity,photo FROM market_table";
 $result = mysqli_query($connection,$query);
 
 ?>
@@ -14,11 +14,11 @@ $result = mysqli_query($connection,$query);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FarmFresh || Products</title>
+    <title>OnMarket || Products</title>
 </head>
 <body>
 <nav>
-    <b>FarmFresh Market</b>
+    <b>Shoe Market</b>
     <ul>
     <a href=""><li>Shop</li></a> 
     <a href=""><li>Orders</li></a> 
@@ -28,7 +28,7 @@ $result = mysqli_query($connection,$query);
     </ul>
 </nav>
 
-<p id="header">Experience the taste of farm-fresh goodness at
+<p id="header">Experience the taste of classic sneakers at
      your doorstep - shop now on our website!</p>
 
      <form id="search-form"action="">
@@ -42,9 +42,11 @@ while($row = mysqli_fetch_assoc($result)){
 
         echo '<div class="products-wrapper" style="background-image: url(\'data:image/jpeg;base64,' . base64_encode($row['photo']) . '\');">';
         echo '<div class="product">';
-        echo '<p>'.$row['product'].'</p>';
+        echo '<p>'.$row['productname'].'</p>';
         echo '<p>'.$row['price'].'</p>';
         echo '<p>'.$row['locationn'].'</p>';
+        echo '<p>'.$row['quantity'].'</p>';
+        echo '<p>'.$row['photo'].'</p>';
         echo '</div>';
      echo '</div>';
 }
